@@ -1,0 +1,46 @@
+.mainSospechosos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .subtituloSospechoso{
+        @extend .subtitulo;
+        width: 200px;
+        font-size: 30px;
+        margin: 50px;
+    }
+    section{
+        display: flex;
+        align-items: center;
+        .textoSospechoso{
+            @include texto(35vw, white, 20px, center);
+            margin-right: 20px;
+            word-spacing: 10px;
+        }
+    }
+    .seccionSospechoso1-y-3{
+        .viejo {
+            padding-left: 50px;
+            margin-right: 8px;
+            max-width: 40vw;
+        }
+        
+        .adolescente {
+            @extend .viejo;
+            margin-right: 0px;
+            min-width: 20vw;
+            max-width: 30vw;
+        }
+    }
+    .seccionSospechoso2-y-4{
+        flex-direction: row-reverse;
+        .mujer {
+            padding-right: 50px;
+            max-width: 50vw;
+        }
+        
+        .horca {
+            @extend .mujer;
+            max-width: 30vw;
+        }
+    }
+}

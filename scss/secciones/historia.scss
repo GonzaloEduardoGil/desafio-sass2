@@ -1,0 +1,20 @@
+.mainHistoria {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    section{
+        .historiaTexto{
+            @include texto(40vw, white, 20px, center);
+            padding: 100px;
+            word-spacing: 10px;
+        }
+    }
+    .historia1{
+        display: flex;
+        img{
+            max-width: 30vw;
+            height: 50vh;
+        }
+    }
+}

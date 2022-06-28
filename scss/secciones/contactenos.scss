@@ -1,0 +1,54 @@
+.formulario {
+    padding: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3{
+        @include texto(25vw, white, 20px, center);
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .datos {
+        max-width: 50vw;
+        background-color: white;
+        margin: 2px;
+        margin-bottom: 10px;
+    }
+    .ingreseSuGenero {
+        width: 20vw;
+        font-size: 21px;
+        margin-top: 30px;
+    }
+    .genero {
+        width: 20px;
+        margin: 20px;
+    }
+    .pais {
+        max-width: 50vw;
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .tituloDeCuadro {
+        width: 25vw;
+    }
+    .cuadro {
+        max-width: 70vw;
+    }
+    .noticias {
+        width: 21.5vw;
+        display: block;
+        margin-top: 20px;
+    }
+    
+    .checkbox {
+        background-color: white;
+        width: 20px;
+    }
+    
+    .enviar {
+        width: 80px;
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  background-color: darkblue;
+  border: solid 1px wheat;
+  padding-bottom: 1vh;
+  padding-top: 1vh; }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    header nav img {
+      width: 150px;
+      margin-bottom: 20px; }
+    header nav .secciones {
+      display: flex;
+      list-style-type: none; }
+      header nav .secciones li {
+        margin-left: 5px;
+        margin-right: 5px; }
+        header nav .secciones li a {
+          color: white; }
+          header nav .secciones li a:hover {
+            background-color: black;
+            border: solid 1px wheat; }
+
+main {
+  background-color: black; }
+
+.gif-y-subtitulo {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center; }
+  .gif-y-subtitulo .gif {
+    width: 30vw;
+    margin-top: 15px; }
+
+.subtitulo, .mainSospechosos .subtituloSospechoso {
+  max-width: 50vw;
+  color: white;
+  font-size: 40px;
+  text-decoration: underline;
+  padding-left: 120px;
+  padding-right: 120px;
+  margin-top: 45px;
+  margin-bottom: 45px; }
+
+.titulo {
+  width: 250px;
+  color: white;
+  font-size: 30px;
+  margin-top: 20px; }
+  .titulo:hover {
+    transform: scale(2, 2);
+    transition: transform 2s; }
+
+.mainIndex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column; }
+  .mainIndex .casa {
+    width: 30vw;
+    padding: 50px; }
+  .mainIndex p {
+    width: 30vw;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px; }
+  .mainIndex .advertencia {
+    background-color: red;
+    animation-name: cambia-color;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 10s; }
+
+@keyframes cambia-color {
+  25% {
+    background-color: yellow;
+    color: black; }
+  50% {
+    background-color: green;
+    color: black; }
+  75% {
+    background-color: aqua;
+    color: black; }
+  100% {
+    background-color: red; } }
+
+.mainHistoria {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center; }
+  .mainHistoria section .historiaTexto {
+    width: 40vw;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 100px;
+    word-spacing: 10px; }
+  .mainHistoria .historia1 {
+    display: flex; }
+    .mainHistoria .historia1 img {
+      max-width: 30vw;
+      height: 50vh; }
+
+.mainSospechosos {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .mainSospechosos .subtituloSospechoso {
+    width: 200px;
+    font-size: 30px;
+    margin: 50px; }
+  .mainSospechosos section {
+    display: flex;
+    align-items: center; }
+    .mainSospechosos section .textoSospechoso {
+      width: 35vw;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      margin-right: 20px;
+      word-spacing: 10px; }
+  .mainSospechosos .seccionSospechoso1-y-3 .viejo, .mainSospechosos .seccionSospechoso1-y-3 .adolescente {
+    padding-left: 50px;
+    margin-right: 8px;
+    max-width: 40vw; }
+  .mainSospechosos .seccionSospechoso1-y-3 .adolescente {
+    margin-right: 0px;
+    min-width: 20vw;
+    max-width: 30vw; }
+  .mainSospechosos .seccionSospechoso2-y-4 {
+    flex-direction: row-reverse; }
+    .mainSospechosos .seccionSospechoso2-y-4 .mujer, .mainSospechosos .seccionSospechoso2-y-4 .horca {
+      padding-right: 50px;
+      max-width: 50vw; }
+    .mainSospechosos .seccionSospechoso2-y-4 .horca {
+      max-width: 30vw; }
+
+.gridPistas {
+  display: grid;
+  grid-template-areas: "imagen1 imagen2" "imagen3 imagen4" "imagen5 imagen6" "imagen7 textoSinImagen";
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0, auto; }
+  .gridPistas .imagen1 {
+    grid-area: imagen1; }
+  .gridPistas .imagen2 {
+    grid-area: imagen2; }
+  .gridPistas .imagen3 {
+    grid-area: imagen3; }
+  .gridPistas .imagen4 {
+    grid-area: imagen4; }
+  .gridPistas .imagen5 {
+    grid-area: imagen5; }
+  .gridPistas .imagen6 {
+    grid-area: imagen6; }
+  .gridPistas .imagen7 {
+    grid-area: imagen7; }
+  .gridPistas .textoSinImagen {
+    grid-area: textoSinImagen; }
+  .gridPistas .imagenes {
+    width: 22vw;
+    padding-left: 10px; }
+    .gridPistas .imagenes:hover {
+      transform: scale(1.2, 1.2); }
+  .gridPistas .textosDeImagen {
+    padding: 30px;
+    width: 30vw; }
+
+.subtituloHipotesis {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .subtituloHipotesis .hipotesis {
+    width: 700px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 100px;
+    word-spacing: 10px; }
+
+.formulario {
+  padding: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .formulario h3 {
+    width: 25vw;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .formulario .datos {
+    max-width: 50vw;
+    background-color: white;
+    margin: 2px;
+    margin-bottom: 10px; }
+  .formulario .ingreseSuGenero {
+    width: 20vw;
+    font-size: 21px;
+    margin-top: 30px; }
+  .formulario .genero {
+    width: 20px;
+    margin: 20px; }
+  .formulario .pais {
+    max-width: 50vw;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px; }
+  .formulario .tituloDeCuadro {
+    width: 25vw; }
+  .formulario .cuadro {
+    max-width: 70vw; }
+  .formulario .noticias {
+    width: 21.5vw;
+    display: block;
+    margin-top: 20px; }
+  .formulario .checkbox {
+    background-color: white;
+    width: 20px; }
+  .formulario .enviar {
+    width: 80px;
+    margin-top: 50px; }
+
+footer {
+  background-color: darkblue;
+  padding: 10px;
+  border: solid 1px wheat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  footer p {
+    width: 28vw;
+    color: white;
+    font-style: italic;
+    font-size: 17px; }
+  footer .secciones2 {
+    list-style-type: none;
+    padding-right: 190px; }
+    footer .secciones2 li a {
+      color: white; }
+
+@media (max-width: 768px) {
+  .gif {
+    width: 50vw; }
+  .mainIndex .casa {
+    width: 50vw; }
+  .mainIndex .introduccion {
+    margin-left: 80px; }
+  .mainHistoria .historia1 {
+    flex-direction: column;
+    align-items: center; }
+    .mainHistoria .historia1 img {
+      max-width: 50vw; }
+  .mainSospechosos section .textoSospechoso {
+    margin-right: 30px; }
+  .mainSospechosos .seccionSospechoso1-y-3 .adolescente {
+    max-width: 50vw; }
+  .gridPistas {
+    grid-template-areas: "imagen1" "imagen2" "imagen3" "imagen4" "imagen5" "imagen6" "imagen7" "textoSinImagen";
+    justify-content: center; }
+    .gridPistas .imagenes {
+      width: 70vw; }
+    .gridPistas .textoDeImagen {
+      width: 50vw;
+      font-size: 20px; }
+  .hipotesis {
+    width: 70vw; } }
+
+@media (max-width: 576px) {
+  header nav {
+    padding: 10px; }
+    header nav img {
+      width: 150px;
+      padding-bottom: 20px; }
+    header nav .titulo {
+      width: 200px;
+      color: white;
+      font-size: 20px;
+      padding-bottom: 20px; }
+    header nav .secciones {
+      flex-direction: column; }
+  .gif-y-subtitulo .gif {
+    width: 70vw; }
+  .subtitulo, .mainSospechosos .subtituloSospechoso {
+    max-width: 90vw; }
+  .mainIndex .casa {
+    width: 70vw; }
+  .mainIndex p {
+    width: 40vw; }
+  .mainHistoria section .historiaTexto {
+    width: 70vw; }
+  .mainSospechosos section, .mainSospechosos .seccionSospechoso2-y-4 {
+    flex-direction: column; }
+    .mainSospechosos section .textoSospechoso, .mainSospechosos .seccionSospechoso2-y-4 .textoSospechoso {
+      width: 70vw; }
+    .mainSospechosos section img, .mainSospechosos .seccionSospechoso2-y-4 img {
+      margin-top: 20px;
+      max-width: 80vw; }
+  .subitutuloHipotesis .hipotesis {
+    width: 80vw; }
+  .formulario .tituloDeCuadro {
+    font-size: 20px; }
+  .formulario .noticias {
+    font-size: 20px; }
+  .footer {
+    flex-direction: column; }
+    .footer p {
+      width: 90vw;
+      padding-bottom: 20px; }
+    .footer .secciones2 {
+      padding-top: 20px; } }

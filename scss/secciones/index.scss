@@ -1,0 +1,27 @@
+.mainIndex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    .casa{
+        width: 30vw;
+        padding: 50px;
+    }
+    p{
+        @include texto(30vw, white, 30px, center);
+        padding: 30px;
+    }
+    .advertencia{
+        background-color: red;
+        animation-name: cambia-color;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 10s;
+    }
+    @keyframes cambia-color{
+        25%{background-color: yellow; color: black;}
+        50%{background-color: green; color: black;}
+        75%{background-color: aqua; color: black;}
+        100%{background-color: red;}
+    }
+}

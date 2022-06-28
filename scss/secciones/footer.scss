@@ -1,0 +1,23 @@
+footer {
+    background-color: darkblue;
+    padding: 10px;
+    border: solid 1px wheat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+        width: 28vw;
+        color: white;
+        font-style: italic;
+        font-size: 17px;
+    }
+    .secciones2{
+        list-style-type: none;
+        padding-right: 190px;
+        li{
+            a{
+                color: white;
+            }
+        }
+    }
+}

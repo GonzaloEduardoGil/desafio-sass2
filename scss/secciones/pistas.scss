@@ -1,0 +1,65 @@
+.gridPistas {
+    display: grid;
+    grid-template-areas:
+        "imagen1 imagen2"
+        "imagen3 imagen4"
+        "imagen5 imagen6"
+        "imagen7 textoSinImagen";
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0, auto;
+    .imagen1 {
+        grid-area: imagen1;
+    }
+    
+    .imagen2 {
+        grid-area: imagen2;
+    }
+    
+    .imagen3 {
+        grid-area: imagen3;
+    }
+    
+    .imagen4 {
+        grid-area: imagen4;
+    }
+    
+    .imagen5 {
+        grid-area: imagen5;
+    }
+    
+    .imagen6 {
+        grid-area: imagen6;
+    }
+    
+    .imagen7 {
+        grid-area: imagen7;
+    }
+    
+    .textoSinImagen {
+        grid-area: textoSinImagen;
+    }
+    .imagenes{
+        width: 22vw;
+        padding-left: 10px;
+        &:hover{
+            transform: scale(1.2,1.2);
+        }
+    }
+    .textosDeImagen{
+        padding: 30px;
+        width: 30vw;
+    }
+}
+.subtituloHipotesis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .hipotesis {
+        @include texto(700px, white, 20px, center);
+        padding: 100px;
+        word-spacing: 10px;
+    }
+}
