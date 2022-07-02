@@ -18,11 +18,16 @@ header{
             li{
                 margin-left: 5px;
                 margin-right: 5px;
+                &:hover{
+                    transform: scale(1.4,1.4);
+                    transition: transform 1s;
+                }
                 a{
                     color: white;
                     &:hover{
                         background-color: black;
                         border: solid 1px wheat;
+                        text-transform: uppercase;
                     }
                 }
             }

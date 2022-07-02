@@ -21,11 +21,15 @@ header {
       header nav .secciones li {
         margin-left: 5px;
         margin-right: 5px; }
+        header nav .secciones li:hover {
+          transform: scale(1.4, 1.4);
+          transition: transform 1s; }
         header nav .secciones li a {
           color: white; }
           header nav .secciones li a:hover {
             background-color: black;
-            border: solid 1px wheat; }
+            border: solid 1px wheat;
+            text-transform: uppercase; }
 
 main {
   background-color: black; }

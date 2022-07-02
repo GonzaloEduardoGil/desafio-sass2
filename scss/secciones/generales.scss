@@ -34,6 +34,7 @@ main{
         transition: transform 2s;
     }
 }
+// este mixin se utiliza en los 5 html para darle forma al texto
 @mixin texto($width, $color, $font-size, $text-aling){
     width: $width;
     color: $color;
