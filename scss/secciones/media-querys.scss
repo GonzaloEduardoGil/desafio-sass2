@@ -35,6 +35,11 @@
                 max-width: 50vw;
             }
         }
+        .seccionSospechoso2-y-4{
+            .horca{
+                max-width: 50vw;
+            }
+        }
     }
     // main pistas//
     .gridPistas{
@@ -97,6 +102,9 @@
         p{
             width: 40vw;
         }
+        .introduccion{
+            padding-left: 10vw;
+        }
     }
     // main historia//
     .mainHistoria{
@@ -108,14 +116,19 @@
     }
     // main sospechosos//
     .mainSospechosos{
-        section, .seccionSospechoso2-y-4{
+        .seccionSospechoso1-y-3, .seccionSospechoso2-y-4{
             flex-direction: column;
             .textoSospechoso{
                 width: 70vw;
             }
             img{
                 margin-top: 20px;
-                max-width: 80vw;
+            }
+            .viejo, .mujer{
+                max-width: 70vw;
+            }
+            .horca{
+                max-width: 50vw;
             }
         }
     }

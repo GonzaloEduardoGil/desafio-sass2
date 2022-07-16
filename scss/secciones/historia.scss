@@ -6,7 +6,7 @@
     section{
         .historiaTexto{
             @include texto(40vw, white, 20px, center);
-            padding: 100px;
+            padding: 5vw;
             word-spacing: 10px;
         }
     }

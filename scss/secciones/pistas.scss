@@ -42,7 +42,7 @@
         grid-area: textoSinImagen;
     }
     .imagenes{
-        width: 22vw;
+        width: 27vw;
         padding-left: 10px;
         &:hover{
             transform: scale(1.2,1.2);
@@ -58,8 +58,9 @@
     flex-direction: column;
     align-items: center;
     .hipotesis {
-        @include texto(700px, white, 20px, center);
-        padding: 100px;
+        @include texto(35vw, white, 20px, center);
+        margin-bottom: 20px;
+        padding: auto;
         word-spacing: 10px;
     }
 }
