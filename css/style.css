@@ -154,8 +154,9 @@ main {
   color: white;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  margin: 0, auto; }
+  width: 90%;
+  margin: 0, auto;
+  padding-left: 7vw; }
   .gridPistas .imagen1 {
     grid-area: imagen1; }
   .gridPistas .imagen2 {
