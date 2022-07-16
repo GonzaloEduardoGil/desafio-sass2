@@ -1,8 +1,11 @@
 // media tablet//
 
 @media(max-width: 768px){
-    .gif{
-        width: 50vw;
+    
+    .gif-y-subtitulo{
+        .gif{
+            width: 50vw;
+        }
     }
     // main index//
     .mainIndex{
@@ -63,6 +66,18 @@
     }
     .hipotesis{
         width: 70vw;
+    }
+    //---------------------------//
+    .footer{
+        .secciones2{
+            li{
+                a{
+                    img{
+                        width: 7vw;
+                    }
+                }
+            }
+        }
     }
 }
 // media telefono//
@@ -155,6 +170,13 @@
         }
         .secciones2{
             padding-top: 20px;
+            li{
+                a{
+                    img{
+                        width: 10vw;
+                    }
+                }
+            }
         }
     }
 }

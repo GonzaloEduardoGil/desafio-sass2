@@ -14,9 +14,16 @@ footer {
     .secciones2{
         list-style-type: none;
         padding-right: 9vw;
+        display: flex;
         li{
             a{
                 color: white;
+                img{
+                    width: 5vw;
+                }
+                .twitter{
+                    padding-top: 7px;
+                }
             }
         }
     }
