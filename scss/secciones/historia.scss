@@ -7,6 +7,8 @@
         .historiaTexto{
             @include texto(40vw, white, 20px, center);
             padding: 5vw;
+            padding-top: 3vw;
+            padding-bottom: 2vw;
             word-spacing: 10px;
         }
     }

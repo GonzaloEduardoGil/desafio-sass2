@@ -108,6 +108,8 @@ main {
     font-size: 20px;
     text-align: center;
     padding: 5vw;
+    padding-top: 3vw;
+    padding-bottom: 2vw;
     word-spacing: 10px; }
   .mainHistoria .historia1 {
     display: flex; }
@@ -263,9 +265,11 @@ footer {
     footer .secciones2 li a {
       color: white; }
       footer .secciones2 li a img {
-        width: 5vw; }
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 4vw; }
       footer .secciones2 li a .twitter {
-        padding-top: 7px; }
+        padding-top: 5px; }
 
 @media (max-width: 768px) {
   .gif-y-subtitulo .gif {
